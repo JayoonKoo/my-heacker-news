@@ -1,3 +1,5 @@
+import View from "../core/View";
+
 export interface NewsFeed {
   readonly id: number;
   readonly title: string;
@@ -6,4 +8,9 @@ export interface NewsFeed {
   readonly url: string;
   readonly comments_count: number;
   read?: boolean;
+}
+
+export interface RouteInfo {
+  page: View;
+  path: string;
 }
